@@ -11,7 +11,7 @@ The model-facing layer proposes typed recovery actions and cites supporting evid
 ## Live app
 
 **Hugging Face Space:**  
-https://huggingface.co/spaces/SolisTechLabs/beam-mission-control
+https://huggingface.co/spaces/DaniKarmy/beam-mission-control
 
 Recommended reviewer route:
 
