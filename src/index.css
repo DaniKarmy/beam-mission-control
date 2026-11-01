@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: 'Arial Narrow', 'Segoe UI Semibold', system-ui, sans-serif;
+    --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+  }
+
+  html,
+  body {
+    font-family: var(--font-sans);
+    background-color: #050811;
+    color: #F1F5F9;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.command-center-bg {
+  background: 
+    radial-gradient(95% 55% at 50% 0%, rgba(14, 116, 144, 0.13) 0%, rgba(15, 23, 42, 0.06) 50%, rgba(5, 8, 17, 0) 100%),
+    linear-gradient(180deg, #060A14 0%, #050811 100%);
+}
+
+.panel-surface {
+  background: linear-gradient(180deg, rgba(15, 23, 38, 0.86) 0%, rgba(10, 15, 26, 0.92) 100%);
+  box-shadow: 0 12px 32px -12px rgba(0, 0, 0, 0.65), inset 0 1px 0 0 rgba(148, 163, 184, 0.08);
+}
+
+.panel-sub {
+  background: rgba(8, 12, 22, 0.72);
+  box-shadow: inset 0 1px 0 0 rgba(148, 163, 184, 0.05);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
